@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.jumbotron img {
+    width: 200px;
+}
+
+hr{
+    width: 250px;
+    border-top: 4px solid #000000;
+}
+
+section {
+    min-height: 300px;
+}
+
+.portfolio img {
+    padding: 20px;
+
+}
