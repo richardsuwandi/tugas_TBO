@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <style>
+    body {
+      background-image: url("img/basisdata1/wallpaper.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" class="rel">
+    <title></title>
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <nav class="navbar-fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" class="text-white">Richard Suwandi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#biaya">Biaya Sebuah Query</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ekspresi">Evaluasi Sebuah Ekspresi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#multiple_ekspresi">Evaluasi Multiple Ekspresi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""></a>
+              </li>
+            </ul>
+          </div>
+      </nav><br><br>
+
+      <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <center><img class="img-fluid" src="img/basisdata1/1.jpg" width="800rem"; alt="Responsive image"></center>
+            <div class="carousel-caption">
+              <h2 class="heading-2 text-dark">Cara mengukur biaya sebuah query</h2><br>
+              <a button type="button" class="btn btn-primary" href="#biaya">See</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <center><img class="img-fluid" src="img/basisdata1/2.jpg" width="800rem"; alt="Responsive image"></center>
+            <div class="carousel-caption ">
+              <h2 class="heading-2 text-dark">Sebuah sistem db mengevaluasi sebuah ekspresi</h2><br>
+              <a button type="button" class="btn btn-primary" href="#ekspresi">See</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <center><img class="img-fluid" src="img/basisdata1/3.jpg" width="800rem"; alt="Responsive image"></center>
+            <div class="carousel-caption ">
+              <h2 class="heading-2 text-dark">sebuah sistem db mengevaluasi multiple ekspresi</h2><br>
+             <a button type="button" class="btn btn-primary" href="#multiple_ekspresi">See</button></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a class="carousel-control-prev" href="#carousel-example-captions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-captions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  
+        <br><br><br>
+  
+        <br><br>
+  
+        <div class="card mb-3" style="max-width: 1500px;" id="biaya">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/basisdata1/biaya.jpg" width="225px" height="250px" class="card-img">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 id="list-item-1" class="card-title">Cara Mengukur Biaya Sebuah Query</h5>
+                <p class="card-text text-justify">sebelum kita mengukur biaya sebuah query pastinya kita harus membuat estimasi biayanya terlebih dahulu, jadi caranya adalah : Strategi yang dipilih dalam evaluasi query tergantung pada estimasi biaya dari masing-masing strategi yang ada.Optimizer Query akan membuat informasi statistik yang disimpan dalam katalog DMBS untuk memperkirakan biaya dari sebuah rencana query.</p>
+                <p class="card-text text-justify">jadi, cara mengukur biaya sebuah query adalah biaya evaluasi query dapat diukur dari banyaknya sumber daya sistem yang digunakan, contohnya: pengaksesan disk, waktu CPU dan waktu komunikasi.</p>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <br><br><br>
+  
+          <br><br>
+  
+            <div class="card mb-3" style="max-width: 1500px;" id="ekspresi">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="img/basisdata1/ekspresi.jpg" width="225px" height="300px" class="card-img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 id="list-item-2" class="card-title">Sistem db Mengevaluasi Sebuah Ekspresi</h5>
+                    <p class="card-text">Mengevaluasi query bagian perbagian secara berurutan :</p>
+                    <p class="card-text">1. Materialisasi</p>
+                    <p class="card-text">Menampung hasil operasi menggunakan tabel temporer(dimaterialkan) yang kemudian digunakan untuk evaluasi level berikutnya.</p>
+                    <br>
+                    <p class="card-text">2. Pipeline</p>
+                    <p class="card-text">Mengganti tabel temporer dengan suatu pipeline operasi(berupa buffer). Penggunaan pipeline akan menghilangkan biaya pembacaan dan penulisan tabel-tabel temporer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br><br><br>
+  
+          <br><br>
+  
+          <div class="card mb-3" style="max-width: 1500px;" id="multiple_ekspresi">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="img/basisdata1/multiple_ekspresi.jpg" width="225px" height="250px" class="card-img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 id="list-item-3" class="card-title">Sistem db Mengevaluasi Multiple Ekspresi</h5>
+                  <p class="card-text text-justify">Ketika multiple expression dibandingkan dengan multiple transformation , maka ada perbedaan pada performa kedua pendekatan tersebut , yakni : ketika multiple expression dimasukkan ke dalam kolom transformasi maka menghasilkan waktu sekitar 02,797 detik. Sedangkan ketika dimasukkan multiple transformation akan menghasilkan sekitar 03,329 detik.</p>
+                  <p class="card-text text-justify">Penyebab utama adanya perbedaan antara kedua pendekatan tersebut karena setiap komponen memiliki tahapan eksekusi sendiri (Validasi, Pre Execute, Execute, Post Execute) yang membutuhkan waktu lebih lama. Tapi kalau dibandingkan antara kedua pendekatan ini ( multiple expression dan multiple transformation ) , multiple expression mempunyai kelebihan dari segi kinerja karena lebih efisien sedangkan multiple transformation mempunyai kelebihan dari segi memberi penanganan kesalahan yang lebih mudah.</p>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 300
+          });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+          });
+    </script>
+    </script>
+  </body>
+</html> 
