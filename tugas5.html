@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <style>
+    body {
+      background-image: url("img/tugas 5/background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Regex</title>
+  </head>
+  <body>
+    <nav class="navbar-fixed-top navbar navbar-expand-lg navbar-dark bg-primary ">
+    <div class="container">
+        <a class="navbar-brand" class="text-white" >Richard Suwandi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon-bar"><i class="fas fa-bars" style="color:#000; font-size:28px;"></i></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pengertian">Pengertian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Manfaat
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#manfaat1">Regex untuk validasi data</a>
+                  <a class="dropdown-item" href="#manfaat2">Regex untuk pencarian</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card mb-3" style="max-width: 1500px;" id="pengertian">
+        <br><br>
+        <center><h2>Pengertian</h2></center>
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="img/tugas 5/pengertian.png" width="225px" height="250px" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="list-item-1" class="card-title">Apa itu Regex ?</h5>
+              <p class="card-text text-justify">Regex adalah singkatan dari Regular Expresion. Regex merupakan sebuah teks (string) yang mendefinisikan sebuah pola pencarian sehingga dapat membantu kita untuk melakukan matching (pencocokan), locate (pencarian), dan manipulasi teks.</p>
+                  <p class="card-text text-justify">Konsep tentang regex pertamakali muncul di tahun 1951, ketika seorang ilmuan matematikan bernama Stephen Cole Kleene memformulasikan definisi tentang bahasa formal. Kemudian konsep ini diadopsi di beberapa program dan menjadi umum digunakan pada program pemeroses teks seperti sed, awk, grep, dll. Regex memudahkan kita untuk memanipulasi teks, tapi juga kadang berbahaya.. karena bisa mengubah teks yang tidak kita inginkan. Biasanya itu terjadi karena kesalahan pola yang diberikan.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="card mb-3" style="max-width: 1500px;" id="manfaat">
+        <br><br>
+        <center><h2>Manfaat</h2></center>
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="img/tugas 2/fungsi.jpg" width="225px" height="250px" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="list-item-1" class="card-title">Manfaat Regex Dalam Pemrograman</h5>
+              <p class="card-text text-justify">Berdasarkan definisi regex yang sudah kita pelajari, kita bisa tahu tiga manfaat penting regex yakni pencarian, pencocokan, dan manipulasi teks.</p>
+              <p class="card-text text-justify">Berikut ini beberapa contoh pemanfaatan regex dalam pemrograman:</p><br>
+              <h5 id="manfaat1" class="card-title">1. Regex untuk validasi data</h5>
+              <p class="card-text text-justify">Seperti contoh kasus password tadi, regex digunakan untuk matching atau pencocokan teks. Pertama-tama, kita harus mendefinisikan pola regex untuk data yang valid. Kemudian, kita lakukan pencocokan dengan pola tersebut. Berikut ini contohnya di HTML dan Javascript.</p>
+              <p class="card-text text-justify">Kode HTML :</p>
+              <img src="img/tugas 5/validasi_data.JPG" width="650rem"; alt="">
+              <p class="card-text text-justify">Perhatikan atribut pattern, atribut ini digunakan untuk menyimpan pola regex. Pada contoh di atas, polanya adalah pengecekan karakter yang diinputkan pada password.</p>
+              <p class="card-text text-justify">Berikut ini kode Javascript untuk memberikan feedback:</p>
+              <img src="img/tugas 5/validasi_data(2).JPG" width="650rem"; alt="">
+              <p class="card-text text-justify">Pada contoh ini, kita tidak menggunakan regex di dalam Javascript. Melainkan kita menggunakannya pada HTML. Kode javascript di atas, hanya bertugas untuk mengecek.. apakah nilai dari field password sudah sesuai atau tidak dengan yang ada pada atribut pattern</p>
+              <br><h5 id="manfaat2" class="card-title">2. Regex untuk pencarian</h5>
+              <p class="card-text text-justify">Contoh penerapan regex untuk pencarian sebenarnya hampir sama dengan validasi data. Pola regex dimasukan dalam kata kunci, lalu dicocokan dengan database atau teks. Contoh program yang menerapkan ini adalah grep.</p>
+              <p class="card-text text-justify">Program grep (globally search for a regular expression and print matching lines) biasanya kita temukan di sistem operasi Unix dan Linux, bahkan ini menjadi program yang selalu ada di setiap distro Linux. Program grep melakukan pencarian berdasarkan pola regex yang diberikan, lalu mencetak output hasilnya.</p>
+              <p class="card-text text-justify">Contoh :</p>
+              <img src="img/tugas 5/pencarian.JPG" width="650rem"; alt="">
+              <p class="card-text text-justify">Misalkan kita ingin mencari teks pada syslog. Kita bisa melihat isi file syslog dengan cat.</p>
+              <p class="card-text text-justify">Perintah ini akan menampilkan banyak sekali teks. Nah di sini kita bisa memanfaatkan grep untuk mencari teks tertentu pada log.</p>
+              <p class="card-text text-justify">Misalnya:</p>
+              <img src="img/tugas 5/pencarian(2).JPG" width="650rem"; alt="">
+              <p class="card-text text-justify">Saya ingin tau apa saja log yang berkaitan dengan jaringan:</p>
+              <p class="card-text text-justify">Perhatikan, kata network ini adalah pola regex yang akan menjadi kata kunci pencarian.</p>
+              <p class="card-text text-justify">Maka hasilnya:</p>
+              <img src="img/tugas 5/pencarian(3).JPG" width="650rem"; alt="">
+              <p class="card-text text-justify">Grep akan mewarnai hasil teks yang cocok dengan pola regex yang diberikan. Dari hasil tersebut, saya bisa tahu apa saja log yang sudah dilakukan pada jaringan di komputer saya. Tidak hanya di grep, pada beberapa teks editor juga menerapkan regex untuk pencarian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="row">
+            <div class="col-sm-6 offset-1">
+                <h1 class="text-white">Contact</h1>
+                <h6 class="text-white"><i class="glyphicon glyphicon-envelope"></i>Email :
+                suwandirichard9@gmail.com
+                </h6>
+                <br><br>
+                <p class="text-white">Copyright © <strong> Richard Christopher Suwandi</strong></p>
+            </div>
+        </div>
+      </footer>
+      
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 300
+          });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+          });
+    </script>
+  </body>
+</html>
