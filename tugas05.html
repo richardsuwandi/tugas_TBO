@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <style>
+    body {
+      background-image: url("img/tugas 5/background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Penyederhanaan Context Free Grammar</title>
+  </head>
+  <body>
+    <nav class="navbar-fixed-top navbar navbar-expand-lg navbar-dark bg-primary ">
+    <div class="container">
+        <a class="navbar-brand" class="text-white" >Richard Suwandi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon icon-bar"><i class="fas fa-bars" style="color:#000; font-size:28px;"></i></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""></a>
+                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+      <center><h1 class="text-white">Penyederhanaan Context Free Grammar</h1></center>
+      <br>
+      <div class="container">
+      <div class="card mb-3" style="max-width: 1500px;" id="manfaat">
+        <br>
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text text-justify">CFG atau Context Free Grammar adalah tata bahasa formal di mana setiap aturan produksi adalah dalam bentuk A → B di mana A adalah pemproduksi, dan B adalah hasil produksi. Batasannya hanyalah ruas kiri adalah sebuah simbol variabel. Dan pada ruas kanan bisa berupa terminal, symbol, variable ataupun ɛ, Contoh aturan produksi yang termasuk CFG adalah seperti berikut ini:</p>
+              <br>
+              <p class="card-text text-justify">1. X → bY | Za</p>
+              <p class="card-text text-justify">2. Y → aY | b</p>
+              <p class="card-text text-justify">3. Z → bZ | ɛ</p>
+              <br>
+              <p class="card-text text-justify">CFG adalah tata bahasa yang mempunyai tujuan sama seperti halnya tata bahasa regular yaitu merupakan suatu cara untuk menunjukkan bagaimana menghasilkan suatu untai-untai dalam sebuah bahasa.</p>
+              <p class="card-text text-justify">CFG perlu disederhankan dengan tujuan untuk melakukan pembatasan sehingga tidak menghasilkan pohon penurunan yang memiliki kerumitan yang tak perlu atau aturan produksi tak berarti. Berikut merupakan langkah-langkah dalam melakukan penyederhanaan CFG:</p>
+              <br>
+              <p class="card-text text-justify">1. Eliminasi ɛ-production</p>
+              <p class="card-text text-justify">2. Eliminasi unit production</p>
+              <p class="card-text text-justify">3. Eliminasi useless symbol</p>
+              <br>
+              <strong><p class="card-text text-justify">Berikut contoh Penyederhanaan CFG:</p></strong>
+              <br>
+              <p class="card-text text-justify">A → cAB | ab</p>
+              <p class="card-text text-justify">B →  BaC| C</p>
+              <p class="card-text text-justify">C →  bC| ɛ </p>
+              <br>
+              <strong><p class="card-text text-justify">Step 1 – Eliminasi ɛ-production</p></strong>
+              <br>
+              <p class="card-text text-justify">1. Hilangkan semua hasil produksi yang ɛ</p>
+              <p class="card-text text-justify">2. Jika X → ɛ, maka X adalah nullable</p>
+              <p class="card-text text-justify">3. Jika Y → X, maka Y adalah nullable</p>
+              <p class="card-text text-justify">4. Jika Z → Xa, maka Z → a</p>
+              <br>
+              <p class="card-text text-justify">Result :</p>
+              <br>
+              <strong><p class="card-text text-justify">A → cAB | ab | cA</p></strong>
+              <strong><p class="card-text text-justify">B →  BaC| C | Ba | aC | a</p></strong>
+              <strong><p class="card-text text-justify">C →  bC| b</p></strong>
+              <br>
+              <strong><p class="card-text text-justify">Step 2 – Eliminasi unit production</p></strong>
+              <br>
+              <p class="card-text text-justify">Jika ada hasil produksi yang terdiri dari 1 variable, maka hasil produksi tersebut disubstitusi dengan hasil produksi dari grammar dimana variable tersebut menjadi pemproduksiResult :</p>
+              <strong><p class="card-text text-justify">A → cAB | ab | cA</p></strong>
+              <strong><p class="card-text text-justify">B →  BaC| C | Ba | aC | a</p></strong>
+              <strong><p class="card-text text-justify">C →  bC| b</p></strong>
+              <br>
+              <strong><p class="card-text text-justify">Step 3 – Eliminasi useless symbol</p></strong>
+              <br>
+              <p class="card-text text-justify">Uji Generate</p>
+              <p class="card-text text-justify">Jika X → YZ, Y → aa, Z → b, maka X,Y,Z lolos uji generate</p>
+              <p class="card-text text-justify">Jika M → PQ, P → aa, Q → QQ, maka M dan Q tidak lolos uji generate</p>
+              <br>
+              <p class="card-text text-justify">Uji Reachable</p>
+              <p class="card-text text-justify">Jika S → TU dimana S adalah start symbol maka T dan U lolos uji reachable</p>
+              <br>
+              <strong><p class="card-text text-justify">Final Result :</p></strong>
+              <br>
+              <strong><p class="card-text text-justify">A → cAB | ab | cA</p></strong>
+              <strong><p class="card-text text-justify">B →  BaC| bC | b | Ba | aC | a</p></strong>
+              <strong><p class="card-text text-justify">C →  bC| b</p></strong>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <footer>
+        <div class="row">
+            <div class="col-sm-6 offset-1">
+                <h1 class="text-black">Contact</h1>
+                <h6 class="text-black"><i class="glyphicon glyphicon-envelope"></i>Email :
+                suwandirichard9@gmail.com
+                </h6>
+                <br><br>
+                <p class="text-black">Copyright © <strong> Richard Christopher Suwandi</strong></p>
+            </div>
+        </div>
+      </footer>
+      
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 300
+          });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+          });
+    </script>
+  </body>
+</html>
